@@ -1,7 +1,0 @@
-{
-    "my_kops_user": {
-        "sensitive": false,
-        "type": "string",
-        "value": "my-test-user"
-    }
-}
