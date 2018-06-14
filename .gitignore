@@ -9,3 +9,6 @@
 *.tfvars
 
 .idea/*
+**/*.iml
+
+verify/files/terraform.json
