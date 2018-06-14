@@ -39,4 +39,4 @@ e2e: tf_out test
 	@terraform destroy -auto-approve --input=false example
 
 docs:
-	@hack/docs.sh > README.md
+	@hack/docs.sh

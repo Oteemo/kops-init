@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-title 'kops iam user'
+title 'init-aws'
 
 content = inspec.profile.file("terraform.json")
 params = JSON.parse(content)

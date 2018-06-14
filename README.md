@@ -18,7 +18,7 @@ provider "aws" {
 
 module "kops_init" {
   #ref can point to master or a tag
-  source = "git::https://github.com/oteemo/kops-init//modules/kops?ref=master"
+  source = "git::https://github.com/oteemo/kops-init//modules/init-aws?ref=master"
 
   kops_user = "my-test-user"
   kops_group = "my-test-kops-group"
@@ -39,20 +39,5 @@ aws configure set profile.test-profile.aws_secret_access_key \
 export AWS_PROFILE=test-profile
 ```
 
-## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| kops_group |  | string | `kops` | no |
-| kops_user |  | string | `kops` | no |
-| pgp_key | a pgp key to use to encrypt the access key | string | `` | no |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| this_access_id | the kops user access_key_id |
-| this_group | the kops group |
-| this_secret |  |
-| this_user | the kops username |
 
