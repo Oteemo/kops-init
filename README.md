@@ -29,7 +29,7 @@ module "kops_init" {
 Setup a profile for AWS CLI
 ```bash
 
-aws config set profile.test-profile.region us-east-1
+aws configure set profile.test-profile.region us-east-1
 aws configure set profile.test-profile.output json
 aws configure set profile.test-profile.aws_access_key_id \
     `terraform output my_kops_access_id`
