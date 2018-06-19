@@ -22,7 +22,7 @@ module "kops_init" {
 
   kops_user = "my-test-user"
   kops_group = "my-test-kops-group"
-  pgp_key = "keybase:userame"
+  pgp_key = "keybase:username"
 }
 ```
 
