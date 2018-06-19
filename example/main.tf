@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "kops_init" {
-  source = "../modules/init-aws"
+  source = "../modules/init-user"
 
   kops_user = "my-test-user"
   kops_group = "my-test-kops-group"
