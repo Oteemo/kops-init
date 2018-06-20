@@ -18,7 +18,7 @@ provider "aws" {
 
 module "kops_init" {
   #ref can point to master or a tag
-  source = "git::https://github.com/oteemo/kops-init//modules/init-aws?ref=master"
+  source = "git::https://github.com/oteemo/kops-init//modules/init-user?ref=master"
 
   kops_user = "my-test-user"
   kops_group = "my-test-kops-group"
